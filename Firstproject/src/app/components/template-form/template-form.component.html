@@ -1,0 +1,15 @@
+
+
+<form class="container" #registerForm="ngForm" (ngSubmit)="submitForm(registerForm.value)">
+<input type="text" name="firstname"  placeholder="Enter First name" ngModel>
+<br>
+<input type="text" name="lastname"  placeholder="Enter Last name" ngModel>
+<br>
+<select name="languages" ngModel>
+  <option value="cpp">CPP</option>
+  <option value="java">Java</option>
+  <option value="angular">Angular</option>
+</select>
+<br><br>
+<input type="submit" name="submit" value="Submit">
+</form>

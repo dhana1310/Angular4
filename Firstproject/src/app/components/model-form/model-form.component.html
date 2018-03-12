@@ -1,0 +1,14 @@
+
+<div class="container">
+<form [formGroup]="registerForm" (ngSubmit)="modelSubmit(registerForm.value)" >
+  <input type="text" formControlName="firstname" placeholder="Enter First Name">
+  <input type="text" formControlName="lastname" placeholder="Enter Last Name">
+  <select formControlName="languages" >
+    <option value="cpp" selected>CPP</option>
+    <option value="java">Java</option>
+    <option value="angular">Angular</option>
+  </select>
+  <input type="submit" value="Submit" [disabled]="!registerForm.valid">
+
+</form>
+</div>

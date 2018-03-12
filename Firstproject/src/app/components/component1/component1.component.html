@@ -1,0 +1,22 @@
+<p>
+  component1 works!
+</p>
+{{arr | sort:'ascending'}}
+<div class="main">
+  <h1>Name's List</h1>
+  <div class="addItem">
+    <input [(ngModel)]="newName" placeholder="Add name" class="addText" >
+    <button (click)="namePush()">add</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let i of arr; let ind=index">
+      {{i | uppercase }}
+      
+      <span (click)="removeName(ind)">x</span>
+    </li>
+    </ul>
+    
+
+</div>
+
